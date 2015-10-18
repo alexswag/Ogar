@@ -44,7 +44,7 @@ function prompt() {
 
 function parseCommands(str) {
     // Log the string
-    gameServer.log.onCommand(str);
+    var game = new GameServer(844,mode);
     
     // Don't process ENTER
     if (str === '')
